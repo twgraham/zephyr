@@ -19,6 +19,7 @@ h1 {
 .masthead {
     background: rgba(255, 255, 255, 0.9);
     border: 0 solid white;
+    border-bottom-color: black;
     border-bottom-width: 1px;
 }
 
@@ -91,6 +92,11 @@ body {
  * Header
  *
  */
+ 
+ /* This here ladies and gentleman is the epitome of a hack. Necessary to get that crisp clean border free effect when navbar is hidden */
+ .navbar-hidden {
+    margin-top: -1px;
+}
 
 .masthead-brand {
     margin-top: 10px;
@@ -232,7 +238,7 @@ body {
     .masthead,
     .mastfoot,
     .cover-container {
-        width: 700px;
+        width: 870px;
     }
 }
 
