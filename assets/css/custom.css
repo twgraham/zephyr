@@ -302,6 +302,10 @@ code {
     margin-bottom: 1em;
 }
 
+/*
+ *  Search Form
+ */
+
 #search {
     position: fixed;
     top: 0px;
