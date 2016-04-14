@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,700"/>
     <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}"/>
-
+    <link rel="stylesheet" type="text/css" href="{{asset "css/scroll.css"}}"
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -60,6 +60,19 @@
         </div>
     </div>
 </div>
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <div class="search-group">
+            <i class="fa fa-search fa-4"></i><input id="search-field" autocomplete="off" type="search" value="" placeholder="type keyword(s) here" />
+        </div>
+        <div class="search-divider"></div>
+    </form>
+    <div class="results-master scrollbar-outer">
+        <div id="results">
+        </div>
+    </div>
+</div>
 
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
@@ -68,9 +81,10 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{asset "js/jquery.bootstrap-autohidingnavbar.min.js"}}"></script>
-<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/jquery.scrollbar.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
 <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
-
+<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
 </html>
